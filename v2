@@ -1,0 +1,205 @@
+package pl.tt;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan0 = new Scanner(System.in);
+        System.out.println("Kalkulator geometryczny[1], kalkulator zwykly [2]");
+        int y = scan0.nextInt();
+        if (y == 1) {
+
+
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Pole [1], obwod [2]");
+            int x = scan.nextInt();
+
+
+            if (x == 1) {
+                Scanner scan2 = new Scanner(System.in);
+                System.out.println("Prostokat[1], trapez [2], koło[3]");
+                int xx = scan.nextInt();
+
+                if (xx == 1) {
+                    Scanner scan3 = new Scanner(System.in);
+                    System.out.println("Podaj bok 1 bok prostokata:");
+                    double a = scan.nextDouble();
+                    Scanner scan4 = new Scanner(System.in);
+                    System.out.println("Podaj bok 2 bok prostokata:");
+                    double b = scan.nextDouble();
+                    if (a >= 0) {
+                        if (b >= 0) {
+                            System.out.println(a * b);
+                        }
+                    } else {
+                        System.out.println("Blad, zadna liczba nie moze byc ujemna");
+                    }
+                }
+
+                if (xx == 2) {
+                    Scanner scan5 = new Scanner(System.in);
+                    System.out.println("Podaj mniejsza podstawe trapezu:");
+                    double c = scan.nextDouble();
+                    Scanner scan6 = new Scanner(System.in);
+                    System.out.println("Podaj dluzsza podstawe trapezu:");
+                    double d = scan.nextDouble();
+                    Scanner scan7 = new Scanner(System.in);
+                    System.out.println("Podaj wysokosc trapezu:");
+                    double e = scan.nextDouble();
+                    if (c >= 0) {
+                        if (d >= 0) {
+                            if (e >= 0) {
+                                System.out.println(((c + d) * e) / 2);
+                            }
+                        }
+                    } else {
+
+                        System.out.println("Blad, zadna liczba nie moze byc ujemna");
+                    }
+                }
+                if (xx == 3) {
+                    Scanner scan8 = new Scanner(System.in);
+                    System.out.println("Podaj promien kola:");
+                    double f = scan.nextDouble();
+                    if (f >= 0) {
+                        System.out.println(3.14 * f * f);
+                    } else {
+                        System.out.println("Blad, promien nie moze byc ujemny");
+                    }
+                }
+            }
+            if (x == 2) {
+                Scanner scan11 = new Scanner(System.in);
+                System.out.println("Prostokat[1], trapez [2], koło[3]");
+                int xy = scan.nextInt();
+
+                if (xy == 1) {
+                    Scanner scan9 = new Scanner(System.in);
+                    System.out.println("Podaj 1 bok prostokata:");
+                    double g = scan.nextDouble();
+                    Scanner scan10 = new Scanner(System.in);
+                    System.out.println("Podaj 2 bok prostokata:");
+                    double h = scan.nextDouble();
+                    if (g >= 0) {
+                        if (h >= 0) {
+                            System.out.println((g + h) * 2);
+                        } else {
+                            System.out.println("Blad, zadna liczba nie moze byc ujemna");
+                        }
+
+
+                    }
+                }
+                if (xy == 2) {
+                    Scanner scan12 = new Scanner(System.in);
+                    System.out.println("Podaj 1 bok trapezu:");
+                    double i = scan.nextDouble();
+                    Scanner scan13 = new Scanner(System.in);
+                    System.out.println("Podaj 2 bok trapezu:");
+                    double j = scan.nextDouble();
+                    Scanner scan14 = new Scanner(System.in);
+                    System.out.println("Podaj 3 bok trapezu:");
+                    double k = scan.nextDouble();
+                    Scanner scan15 = new Scanner(System.in);
+                    System.out.println("Podaj 4 bok trapezu:");
+                    double l = scan.nextDouble();
+                    if (i >= 0) {
+                        if (j >= 0) {
+                            if (k >= 0) {
+                                if (l >= 0) {
+                                    System.out.println(i + j + k + l);
+                                }
+                            }
+                        }
+                    } else {
+                        System.out.println("Blad, zadna liczba nie moze byc ujemna");
+                    }
+
+
+                }
+
+                if (xy == 3) {
+                    Scanner scan16 = new Scanner(System.in);
+                    System.out.println("Podaj promien kola:");
+                    double m = scan.nextDouble();
+                    if (m >= 0) {
+                        System.out.println(2 * 3.14 * m);
+
+                    } else {
+                        System.out.println("Blad, promien nie moze byc ujemny");
+                    }
+
+
+                }
+
+            }
+        }
+                        if (y == 2) {
+                            Scanner scan17 = new Scanner(System.in);
+                            System.out.println("Dodawanie[1], odejmowanie[2], dzielenie[3],mnozenie[4],modulo[5]");
+                            double yy = scan17.nextInt();
+                            if (yy == 1) {
+                                Scanner scan18 = new Scanner(System.in);
+                                System.out.println("Podaj 1 liczbe:");
+                                double o = scan18.nextDouble();
+                                Scanner scan19 = new Scanner(System.in);
+                                System.out.println("Podaj 2 liczbe:");
+                                double p = scan19.nextDouble();
+
+                                System.out.println(o + p);
+                            }
+                            if (yy == 2) {
+                                Scanner scan18 = new Scanner(System.in);
+                                System.out.println("Podaj 1 liczbe:");
+                                double o = scan18.nextDouble();
+                                Scanner scan19 = new Scanner(System.in);
+                                System.out.println("Podaj 2 liczbe:");
+                                double p = scan19.nextDouble();
+
+                                System.out.println(o - p);
+
+                            }
+                            if (yy == 3) {
+                                Scanner scan18 = new Scanner(System.in);
+                                System.out.println("Podaj 1 liczbe:");
+                                double o = scan18.nextDouble();
+                                Scanner scan19 = new Scanner(System.in);
+                                System.out.println("Podaj 2 liczbe:");
+                                double p = scan19.nextDouble();
+
+                                System.out.println(o / p);
+
+                            }
+                            if (yy == 4) {
+                                Scanner scan18 = new Scanner(System.in);
+                                System.out.println("Podaj 1 liczbe:");
+                                double o = scan18.nextDouble();
+                                Scanner scan19 = new Scanner(System.in);
+                                System.out.println("Podaj 2 liczbe:");
+                                double p = scan19.nextDouble();
+
+                                System.out.println(o * p);
+
+                            }
+                            if (yy == 5) {
+                                Scanner scan18 = new Scanner(System.in);
+                                System.out.println("Podaj 1 liczbe:");
+                                double o = scan18.nextDouble();
+                                Scanner scan19 = new Scanner(System.in);
+                                System.out.println("Podaj 2 liczbe:");
+                                double p = scan19.nextDouble();
+
+                                System.out.println(o % p);
+                            }
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
